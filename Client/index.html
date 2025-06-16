@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск студентов</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="section">
+        <h1 class="section-header">Поиск студентов (оставьте поля пустыми, чтобы получить все записи)</h1>
+        <div class="section-content">
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" placeholder="Введите имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" placeholder="Введите фамилию">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Возраст:</label>
+                    <input type="number" id="age" placeholder="Введите возраст">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneNumber">Телефон:</label>
+                    <input type="text" id="phoneNumber" placeholder="Введите телефон">
+                </div>
+                
+                <div class="form-group">
+                    <label for="major">Специальность:</label>
+                    <input type="text" id="major" placeholder="Введите специальность">
+                </div>
+                
+                <button id="searchButton">Найти</button>
+            </div>
+            
+            <div class="results" id="resultsContainer">
+                <!-- Здесь будут отображаться результаты поиска -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1 class="section-header">Добавление студента</h1>
+        <div class="section-content">
+            <div class="add-form">
+                <div class="form-group">
+                    <label for="addFirstName">Имя:</label>
+                    <input type="text" id="addFirstName" placeholder="Введите имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addLastName">Фамилия:</label>
+                    <input type="text" id="addLastName" placeholder="Введите фамилию" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addAge">Возраст:</label>
+                    <input type="number" id="addAge" placeholder="Введите возраст" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addPhoneNumber">Телефон:</label>
+                    <input type="text" id="addPhoneNumber" placeholder="Введите телефон" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addMajor">Специальность:</label>
+                    <input type="text" id="addMajor" placeholder="Введите специальность" required>
+                </div>
+                
+                <button id="addButton" type="button">Добавить</button>
+            </div>
+            
+            <div class="add-result" id="addResultMessage">
+                <!-- Здесь будут отображаться результаты добавления -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1 class="section-header">Удаление студента</h1>
+        <div class="section-content">
+            <div class="delete-form">
+                <div class="form-group">
+                    <label for="deleteId">ID для удаления:</label>
+                    <input type="number" id="deleteId" placeholder="Введите id" required>
+                </div>
+                
+                <button id="deleteButton" type="button">Удалить</button>
+            </div>
+            
+            <div class="delete-result" id="deleteResultMessage">
+                <!-- Здесь будут отображаться результаты удаления -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1 class="section-header">Обновление данных</h1>
+        <div class="section-content">
+            <div class="update-form">
+                <div class="form-group">
+                    <label for="updateId">ID:</label>
+                    <input type="number" id="updateId" placeholder="Введите ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="updateFirstName">Имя:</label>
+                    <input type="text" id="updateFirstName" placeholder="Введите имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="updateLastName">Фамилия:</label>
+                    <input type="text" id="updateLastName" placeholder="Введите фамилию" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="updateAge">Возраст:</label>
+                    <input type="number" id="updateAge" placeholder="Введите возраст" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="updatePhoneNumber">Телефон:</label>
+                    <input type="text" id="updatePhoneNumber" placeholder="Введите телефон" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="updateMajor">Специальность:</label>
+                    <input type="text" id="updateMajor" placeholder="Введите специальность" required>
+                </div>
+                
+                <button id="updateButton" type="button">Обновить</button>
+            </div>
+            
+            <div class="update-result" id="updateResultMessage">
+                <!-- Здесь будут отображаться результаты обновления -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
